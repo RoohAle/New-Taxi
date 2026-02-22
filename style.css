@@ -49,8 +49,9 @@ nav {
 }
 
 nav.scrolled {
-    background-color: white;
+    background-color: #2ECC71;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 nav .container {
@@ -92,12 +93,21 @@ nav .container {
 
 .nav-links a {
     text-decoration: none;
-    color: #1a1a1a;
+    color:  #2ECC71;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    border: #271111;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #2ECC71;
+    color: white;
+}
+
+.nav-link.scrolled {
+    background-color: #2ECC71;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 /* Hero Section */
@@ -400,7 +410,7 @@ nav .container {
 /* Download Section */
 .download {
     padding: 5rem 0;
-    background-color: #2ECC71;
+    background-color: #b9e4cb;
     color: white;
     position: relative;
     overflow: hidden;
