@@ -24,6 +24,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     padding: 0 1rem;
 }
+.containersobrenos{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
 
 @media (min-width: 640px) {
     .container {
@@ -470,7 +475,7 @@ nav .container {
 .btn-download {
     background-color: white;
     color: #2ECC71;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border-radius: 0.5rem;
     font-size: 1.125rem;
     font-weight: 600;
