@@ -51,8 +51,107 @@
         </div>
     </section>
 <body>
-    <h1>Sobre Nós</h1>
+    <section id="sobre" class="sobre">
+    <div class="container">
+        <h2>Sobre o New Taxi</h2>
+
+        <p>
+            O <strong>New Taxi</strong> é um aplicativo de mobilidade urbana criado para oferecer
+            transporte rápido, seguro e prático para a população da região. A plataforma conecta
+            passageiros e motoristas locais por meio da tecnologia, facilitando o deslocamento
+            diário com mais comodidade e eficiência.
+        </p>
+
+        <p>
+            Com o New Taxi, o usuário pode solicitar corridas diretamente pelo celular,
+            visualizar veículos próximos e acompanhar a chegada do motorista em tempo real.
+            O aplicativo foi desenvolvido para ser simples de usar, garantindo rapidez no
+            atendimento e uma experiência segura durante toda a viagem.
+        </p>
+
+        <p>
+            Nosso objetivo é oferecer um serviço acessível e confiável, valorizando os
+            profissionais locais e proporcionando uma alternativa moderna de transporte
+            para a comunidade.
+        </p>
+
+        <p>
+            <strong>New Taxi – mobilidade urbana com praticidade e segurança.</strong>
+        </p>
+    </div>
+</section>
     
 </body>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>New Táxi</h3>
+                    <p>Transporte seguro, rápido e confiável.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Suporte</h3>
+                    <ul>
+                        <li><a href="#">Ajuda</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Termos</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 New Táxi. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+         window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('nav-links');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </html>
