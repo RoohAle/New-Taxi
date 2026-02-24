@@ -10,15 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
+    <link rel="shortcut icon" sizes="32px" href="favicon.ico" type="image/x-icon">
+    
 </head>
+
 <body>
-    <!-- Navigation -->
+    <!-- Cabeçalho -->
     <nav id="navbar">
         <div class="container">
             <div class="logo">
-                <div class="logo-icon">🚕</div>
                 <span>New Táxi</span>
             </div>
             <div class="nav-links">
@@ -41,17 +41,16 @@
                     </p>
                     <div class="button-group">
                         <button class="btn btn-primary">
-                            Baixar Agora
-                            <span>⬇️</span>
+                            <a href="https://play.google.com/store/apps/details?id=br.com.taxinew.passenger.taximachine&pcampaignid=web_share" target="_blank">Baixar Agora</a>
                         </button>
-                        <button class="btn btn-secondary">
-                            Saiba Mais
-                            <span>→</span>
+                        <button class="btn btn-primary">
+                            <a href="saibamais.html" target="_blank">Saiba Mais</a>
+                            
                         </button>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="hero-taxi-modern.png" alt="New Táxi Vehicle">
+                    <img src="hero-taxi-modern.png" alt="New Táxi veículo">
                 </div>
             </div>
         </div>
@@ -176,6 +175,14 @@
         // Navbar scroll effect
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+         window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('nav-links');
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
