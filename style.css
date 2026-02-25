@@ -88,6 +88,7 @@ nav .container {
 .nav-links {
     display: none;
     gap: 2rem;
+    color: #2ECC71;
 }
 
 @media (min-width: 768px) {
@@ -97,12 +98,12 @@ nav .container {
 }
 
 .nav-links a {
-    text-decoration: none;
-    color:  #2ECC71;
+    text-decoration: solid; 
+    color:#2ECC71;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5em;
     border: #271111;
-    transition: color 0.3s ease;
+    transition: color 0.9s ease;
 }
 
 .nav-links a:hover {
